@@ -56,5 +56,13 @@ error_max = np.max(np.abs(vertex_values_u_D - vertex_values_u))
 print('error_L2  =', error_L2)
 print('error_max =', error_max)
 
+# This is to check where you run the program
+import getpass, socket
+hostname = socket.gethostname()
+username = getpass.getuser()
+hostname = socket.gethostname()
+
+plt.title("Run by "+username+" on "+hostname)
+plt.savefig("poisson_out/poisson.png")
 # Hold plot
 plt.show()
