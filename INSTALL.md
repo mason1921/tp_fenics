@@ -12,7 +12,7 @@ Then add these lines in the file  and save (modify with your student number and 
 ```
 git config --global  http.proxy https://studentnumber:password@134.157.103.2:3128
 export https_proxy=https://studentnumber:password@134.157.103.2:3128
-source /opt/fenics-2019/
+source /opt/fenics-2019/conda-fenics-2019.sh
 ```
 
 ## On your laptop
