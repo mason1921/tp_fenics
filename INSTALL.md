@@ -10,9 +10,11 @@ subl $HOME/.bashrc
 Then add these lines in the file  and save (modify with your student number and password)
 
 ```
-git config --global  http.proxy https://studentnumber:password@134.157.103.2:3128
-export https_proxy=https://studentnumber:password@134.157.103.2:3128
-source /opt/fenics-2019/
+git config --global  http.proxy http://studentnumber:password@134.157.103.2:3128
+export https_proxy=http://studentnumber:password@134.157.103.2:3128
+source /opt/fenics-2019/conda-fenics-2019.sh
+export DIJITSO_CACHE_DIR=$HOME/.dijitsocache
+mkdir -p $DIJITSO_CACHE_DIR 
 ```
 
 ## On your laptop
